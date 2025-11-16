@@ -1,0 +1,84 @@
+    1  sudo fdisk -l
+    2  sudo fdisk /dev/sdc
+    3  sudo fdisk -l
+    4  sudo fdisk /dev/sdc
+    5  sudo fdisk -
+    6  sudo[Cfdisk /dev/sdc
+    7  sudo fdisk /dev/sdc
+    8  free
+    9  sudo fdisk /dev/sdc
+   10  free
+   11  free -h
+   12  sudo mkswap /dev/sdc1
+   13  free -h
+   14  sudo swapon /dev/sdc1
+   15  free -h
+   16  swapon -s
+   17  cat /proc/swaps
+   18  clear
+   19  sudo fdisk -l
+   20  sudo fdisk /dev/sdb
+   21  sudo fdisk -l
+   22  sudo fdisk /dev/sdb
+   23  sudo wipefs -a /dev/sdb1
+   24  sudo wipefs -a /dev/sdb2
+   25  sudo wipefs -a /dev/sdc2
+   26  sudo wipefs -a /dev/sdc3
+   27  sudo wipefs -a /dev/sdc5
+   28  sudo pvcreate  
+   29  sudo pvcreate /dev/sdb1 /dev/sdb2 /dev/sdc2 /dev/sdc3 /dev/sdc5 /dev/sdc6
+   30  sudo apt update
+   31  sudo apt install lvm2
+   32  sudo pvcreate /dev/sdb1 /dev/sdb2 /dev/sdc2 /dev/sdc3 /dev/sdc5 /dev/sdc6
+   33  sudo pvs
+   34  sudo vgcreate vg_datos /dev/sdb1 dev/sdc2
+   35  sudo vgcreate vg_datos /dev/sdb1 /dev/sdc2
+   36  vgs
+   37  sudo vgs
+   38  sudo pvs
+   39  sudo vgcreate vg_web /dev/sdb2
+   40  sudo pvs
+   41  -L 1G vg_web -n lv_web1
+   42  sudo lvcreate -L 1G vg_web -n lv_web1
+   43  sudo lvcreate -L 512M vg_web -n lv_web2
+   44  sudo lvcreate -L 512M vg_web -n lv_web3
+   45  sudo lvs
+   46  sudo pvs
+   47  sudo fdisk -l
+   48  sudo mkfs.ext4 /dev/mapper/vg_web-lv_web1
+   49  sudo mkfs.ext4 /dev/mapper/vg_web-lv_web2
+   50  sudo mkfs.ext4 /dev/mapper/vg_web-lv_web3
+   51  ls
+   52  cd ..
+   53  ls
+   54  cd ..
+   55  ls
+   56  cd home
+   57  ls
+   58  cd bryan
+   59  ls
+   60  ls /opt/VBoxGuestAdditions
+   61  sudo apt-get install gcc make perl
+   62  sudo apt install bzip2 tar
+   63  cd ..
+   64  ls
+   65  cd ..
+   66  ls
+   67  cd home
+   68  git clone https://github.com/RR-jair/TP2_Rocha_bryan.git
+   69  sudo apt install git
+   70  git clone https://github.com/RR-jair/TP2_Rocha_bryan.
+   71  git init
+   72  cd ~
+   73  mkdir tp2
+   74  cd tp2
+   75  git clone https://github.com/RR-jair/TP2_Rocha_bryan.
+   76  git clone https://github.com/RR-jair/TP2_Rocha_bryan.git
+   77  RR-jair
+   78  ls
+   79  cd TP2_Rocha_bryan
+   80  sudo pvs > pvs.txt
+   81  ls
+   82  sudo vgs > vgs.txt
+   83  sudo lvs > lvs.txt
+   84  history > historial_lvm.txt
